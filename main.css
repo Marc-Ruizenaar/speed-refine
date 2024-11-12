@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: black;
+}
+
+:root {
+    --main-orange: #FF9900;
+    --secondary-green: #00CC66;
+    --text-gray: #A7A7A7;
+}
+
+p {
+    font-size: 1rem;
+    color: var(--text-gray);
+}
+
+h1 {
+    /* You might need to change this a bit */
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h2 {
+    /* You might need to change this a bit */
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.btn-orange {
+    /* You might need to change this a bit */
+    background-color: var(--main-orange);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
