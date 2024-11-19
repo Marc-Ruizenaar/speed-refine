@@ -394,7 +394,7 @@ h3, h4{
 
 
 
-/* Hamburger Menu Styles */
+/* hamburger menu */
 
 .hamburger-menu {
   display: none; 
@@ -433,11 +433,11 @@ h3, h4{
 
 
 
-/* Responsive Styles */
+/* hamburger responsive style */
 @media (max-width: 768px) {
   
   .hamburger-menu {
-    display: block; /* Show hamburger menu on mobile */
+    display: block; 
   }
 
   .nav-links-container {
