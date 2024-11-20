@@ -16,8 +16,9 @@ h4 {
 .main-nav {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
   align-items: center;
-  padding: 3rem 0 3rem;
+  padding: 20px 0 20px;
 
   .nav-links-container {
     display: flex;
@@ -28,7 +29,6 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 35rem;
 
     ul {
       display: flex;
@@ -93,7 +93,7 @@ h4 {
 .cards-container {
   display: flex;
   justify-content: center;
-  gap: 4rem;
+  gap: 20px;
   padding-bottom: 4rem;
 
 
@@ -145,7 +145,7 @@ h4 {
 /*footer*/
 
 .footer-container {
-  padding: 4rem 0 4rem;
+  padding: 4rem 0 20px;
   display: flex;
   flex-direction: row;
   gap: 15rem;
@@ -181,7 +181,10 @@ h4 {
 
       gap: 1.2rem;
       width: 33%;
-
+      
+      @media (max-width: 768px) {
+        width: 100%;
+      }
       ul {
         display: flex;
         flex-direction: column;
@@ -259,6 +262,7 @@ h4 {
           position: absolute;
           margin: 0;
           bottom: 1px;
+          padding-bottom: 1rem;
         }
       }
     }
@@ -268,7 +272,7 @@ h4 {
   .footer-container {
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 40px;
 
     .footer-logo {
       width: 100%;
@@ -441,6 +445,10 @@ h4 {
 
   .hamburger-menu {
     display: block;
+  }
+
+  .nav-request {
+    display: none!important;
   }
 
   .nav-links-container {

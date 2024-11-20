@@ -48,7 +48,7 @@ h2 {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 20px;
 }
 
 /*css for blogs.html*/
@@ -59,20 +59,27 @@ h2 {
 
 .blogs-header {
   display: flex;
+  align-items: center;
   gap: 40px;
+
+  @media (max-width: 786px) {
+    flex-direction: column;
+  }
 
   img {
     border-radius: 20px;
+    width: 50%;
+    @media (max-width: 786px) {
+      width: 100%;
+    }
   }
 
   p:first-of-type {
     color: orange;
     font-size: 15px;
-    margin-top: 50px;
   }
 
   p {
-    margin-top: 30px;
     line-height: 1.5;
     color: white;
     font-size: 1.2rem;
@@ -86,7 +93,6 @@ h2 {
   @media (max-width: 480px) {
     flex-direction: column;
     /* Stack items vertically */
-    margin: 10px 1em;
     /* Adjust margin */
     gap: 15px;
     /* Reduce gap */
@@ -114,6 +120,10 @@ h2 {
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 40px;
   gap: 30px;
+
+  @media (max-width: 768px) {
+  grid-template-columns: 1fr;
+  }
 
   img {
     border-radius: 20px;
@@ -210,7 +220,7 @@ h2 {
 
 
 
-  @media (max-width: 480px) {
+  @media (max-width: 786px) {
     display: flex;
     flex-direction: column;
     /* Switch to column layout */
@@ -245,7 +255,6 @@ h2 {
     }
 
     .single-blog-right-side h1 {
-      margin: 30px 120px 0 0;
       font-size: 40px;
     }
 
